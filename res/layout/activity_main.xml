@@ -1,0 +1,184 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jaydi.ruby.MainActivity" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/transparent_white" >
+
+        <TextView
+            android:id="@+id/text_main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="3dp"
+            android:textSize="20sp" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="15dp" >
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="4dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_ruby_small" />
+
+            <TextView
+                android:id="@+id/text_main_ruby_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:background="@color/brown"
+                android:paddingBottom="2dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="2dp"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_main_container_intro"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/frame_main_container_collect"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/frame_main_container_use"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/frame_main_container_more"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/background_tab" >
+
+        <LinearLayout
+            android:id="@+id/button_main_nav_intro"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="changeNav"
+            >
+        	<ImageView
+        	    android:id="@+id/button_main_nav_intro_img"
+        	    android:src="@drawable/ico_01_sel"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    />
+        	<TextView
+        	    android:id="@+id/button_main_nav_intro_txt"
+        	    android:text="@string/nav_intro" 
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:textColor="@color/grey"
+            android:textSize="12sp" 
+        	    />
+        </LinearLayout>
+		<LinearLayout
+            android:id="@+id/button_main_nav_collect"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="changeNav"
+            >
+        	<ImageView
+        	    android:id="@+id/button_main_nav_collect_img"
+        	    android:src="@drawable/ico_02_sel"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    />
+        	<TextView
+        	    android:id="@+id/button_main_nav_collect_txt"
+        	    android:text="@string/nav_collect" 
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:textColor="@color/grey"
+            android:textSize="12sp" 
+        	    />
+        </LinearLayout>        
+
+		<LinearLayout
+            android:id="@+id/button_main_nav_use"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="changeNav"
+            >
+        	<ImageView
+        	    android:id="@+id/button_main_nav_use_img"
+        	    android:src="@drawable/ico_03_sel"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    />
+        	<TextView
+        	    android:id="@+id/button_main_nav_use_txt"
+        	    android:text="@string/nav_use" 
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:textColor="@color/grey"
+            android:textSize="12sp" 
+        	    />
+        </LinearLayout>        
+
+		<LinearLayout
+            android:id="@+id/button_main_nav_more"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="changeNav"
+            >
+        	<ImageView
+        	    android:id="@+id/button_main_nav_more_img"
+        	    android:src="@drawable/ico_04_sel"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    />
+        	<TextView
+        	    android:id="@+id/button_main_nav_more_txt"
+        	    android:text="@string/nav_more" 
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:textColor="@color/grey"
+            android:textSize="12sp" 
+        	    />
+        </LinearLayout>        
+	
+    </LinearLayout>
+
+</LinearLayout>

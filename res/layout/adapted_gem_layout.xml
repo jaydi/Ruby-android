@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    tools:context="com.jaydi.ruby.RubyActivity" >
+
+    <FrameLayout
+        android:id="@+id/frame_adapted_gem_box1"
+        android:layout_width="165dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        android:focusable="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <uk.co.senab.bitmapcache.CacheableImageView
+                android:id="@+id/image_adapted_gem_image_1"
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/text_adapted_gem_name_1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingBottom="2.5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" />
+
+            <TextView
+                android:id="@+id/text_adapted_gem_value_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="3dp"
+                android:drawableStart="@drawable/ic_ruby_small"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="2.5dp"
+                android:textColor="@color/red" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_transparent" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_adapted_gem_box2"
+        android:layout_width="165dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <uk.co.senab.bitmapcache.CacheableImageView
+                android:id="@+id/image_adapted_gem_image_2"
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/text_adapted_gem_name_2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingBottom="2.5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" />
+
+            <TextView
+                android:id="@+id/text_adapted_gem_value_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="3dp"
+                android:drawableStart="@drawable/ic_ruby_small"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="2.5dp"
+                android:textColor="@color/red" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_transparent" />
+    </FrameLayout>
+
+</LinearLayout>

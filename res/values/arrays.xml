@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="picture_options">
+        <item>Album</item>
+        <item>Capture</item>
+    </string-array>
+
+</resources>

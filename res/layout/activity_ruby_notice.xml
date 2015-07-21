@@ -1,0 +1,54 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.jaydi.ruby.RubyNoticeActivity" >
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="360dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_ruby_big" />
+
+        <TextView
+            android:id="@+id/text_ruby_notice_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:paddingTop="15dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="20dp"
+            android:text="@string/get_ruby_guide"
+            android:textColor="@color/grey"
+            android:textSize="12sp" />
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="55dp"
+            android:background="@drawable/selector_red_round"
+            android:gravity="center"
+            android:onClick="goToRecommend"
+            android:text="@string/get_ruby"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</FrameLayout>

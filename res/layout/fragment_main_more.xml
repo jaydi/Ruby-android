@@ -1,0 +1,192 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp" >
+
+            <ImageView
+                android:id="@+id/image_more_profile"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/text_more_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/text_more_current_level_guide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:textColor="@color/red"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/text_more_goal_level_guide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:textColor="@color/red"
+                    android:textSize="12sp" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/text_more_level_current"
+                    android:layout_width="45dp"
+                    android:layout_height="20dp"
+                    android:gravity="start" />
+
+                <FrameLayout
+                    android:layout_width="220dp"
+                    android:layout_height="20dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:weightSum="100" >
+
+                        <View
+                            android:id="@+id/progress_more_filled"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0"
+                            android:background="@color/red" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/text_more_level_guide"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/text_more_level_goal"
+                    android:layout_width="45dp"
+                    android:layout_height="20dp"
+                    android:gravity="end" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_more_social"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_grey_round"
+                android:gravity="center"
+                android:paddingEnd="40dp"
+                android:paddingStart="40dp"
+                android:text="@string/manage_social"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+		 <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="40dp"
+		        android:gravity="center"
+		        android:text="@string/social_description"
+		        android:textColor="#ff505050"
+		        android:textSize="13sp" />            
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/grey" />
+
+        <Button
+            android:id="@+id/button_more_account"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/selector_white"
+            android:gravity="start|center_vertical"
+            android:paddingStart="15dp"
+            android:text="@string/account" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/grey" />
+
+        <Button
+            android:id="@+id/button_more_mycoupons"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/selector_white"
+            android:gravity="start|center_vertical"
+            android:paddingStart="15dp"
+            android:text="@string/my_coupons" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/grey" />
+
+        <Button
+            android:id="@+id/button_more_qrcode"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/selector_white"
+            android:gravity="start|center_vertical"
+            android:paddingStart="15dp"
+            android:text="@string/qrcode" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/grey" />
+
+        <Button
+            android:id="@+id/button_more_invite"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/selector_white"
+            android:gravity="start|center_vertical"
+            android:paddingStart="15dp"
+            android:text="@string/invite" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/grey" />
+
+        <Button
+            android:id="@+id/button_more_settings"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/selector_white"
+            android:gravity="start|center_vertical"
+            android:paddingStart="15dp"
+            android:text="@string/settings" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,46 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:paddingBottom="2.5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="2.5dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <uk.co.senab.bitmapcache.CacheableImageView
+            android:id="@+id/image_adapted_userpair_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/text_adapted_userpair_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|start"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp" />
+
+        <Button
+            android:id="@+id/text_adapted_userpair_remove"
+            android:layout_width="72dp"
+            android:layout_height="36dp"
+            android:background="@drawable/selector_holo_grey_round"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="@string/remove"
+            android:textColor="@color/grey" />
+    </LinearLayout>
+
+</FrameLayout>

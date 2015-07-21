@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.jaydi.ruby.ProfileActivity" >
+
+    <uk.co.senab.bitmapcache.CacheableImageView
+        android:id="@+id/image_profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:onClick="getImage"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_profile_dummy" />
+
+    <EditText
+        android:id="@+id/edit_profile_nickname"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_white_round"
+        android:hint="@string/nickname"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_profile_bday"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_white_round"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:hint="@string/birthday"
+        android:onClick="chooseBday"
+        android:paddingStart="10dp"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/image_profile_male"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="5dp"
+            android:clickable="true"
+            android:onClick="chooseGender"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_selected_not" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:text="@string/female"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/image_profile_female"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="end"
+            android:layout_marginStart="5dp"
+            android:clickable="true"
+            android:onClick="chooseGender"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_selected_not" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_brown_round"
+        android:gravity="center"
+        android:onClick="confirmProfile"
+        android:text="@string/confirm"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

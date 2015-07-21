@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light"
+    android:orientation="vertical"
+    tools:context="com.jaydi.ruby.SocialActivity" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/manage_social"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_social_nav_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/enabler_social_menu"
+            android:gravity="center"
+            android:onClick="changeNav"
+            android:text="@string/nav_search"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button_social_nav_pairs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/enabler_social_menu"
+            android:gravity="center"
+            android:onClick="changeNav"
+            android:text="@string/nav_pairs"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/linear_social_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp" >
+
+                <EditText
+                    android:id="@+id/edit_social_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_holo_grey_round"
+                    android:inputType="text"
+                    android:hint="친구의 닉네임을 입력하세요."
+                    android:padding="6dp" />
+
+                <Button
+                    android:layout_width="72dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/selector_red_round"
+                    android:onClick="searchUser"
+                    android:text="@string/search"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+           	<TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:text="@string/social_description"
+		        android:textColor="#ff707070"
+		        android:textSize="13sp" />
+             <ListView
+                android:id="@+id/list_social_users"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:divider="@null"
+                android:dividerHeight="0dp" />
+         </LinearLayout>
+        <ListView
+            android:id="@+id/list_social_pairs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:visibility="gone" />
+        
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ButtonStyle" severity="ignore" />
+    <issue id="ContentDescription" severity="ignore" />
+    <issue id="InflateParams" severity="ignore" />
+    <issue id="LabelFor" severity="ignore">
+        <ignore path="res/layout/activity_profile.xml" />
+    </issue>
+    <issue id="NestedWeights" severity="ignore" />
+    <issue id="RtlSymmetry" severity="ignore" />
+    <issue id="SdCardPath" severity="ignore" />
+    <issue id="SmallSp" severity="ignore" />
+    <issue id="TextFields" severity="ignore" />
+    <issue id="TypographyEllipsis" severity="ignore" />
+    <issue id="UselessParent" severity="ignore" />
+    <issue id="ViewHolder" severity="ignore" />
+</lint>
